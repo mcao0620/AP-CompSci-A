@@ -96,7 +96,7 @@ public void draw() {
 }
 
 public void placeMines() {
-    // ArrayList of Arrays to distribute mines 
+    // ArrayList of int arrays to distribute mines 
   ArrayList<int[]> distribute = new ArrayList<int[]>();
   for (int i = 0; i < cols; i++) {
     for (int j = 0; j < rows; j++) {
