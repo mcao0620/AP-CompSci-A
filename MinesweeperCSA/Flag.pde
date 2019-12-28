@@ -1,5 +1,5 @@
-public class Flag{
-  int x,y;
+public class Flag {
+  int x, y;
   boolean flagged;
   
   public Flag(int xPos, int yPos) {

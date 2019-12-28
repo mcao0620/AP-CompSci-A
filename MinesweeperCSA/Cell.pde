@@ -72,7 +72,7 @@ public class Cell {
       for (int j = -1; j <= 1; j++) {
         // checks if cells are in bounds
         if (i + whatCol > -1 && i + whatCol < cols && j + whatRow > -1 && j + whatRow < rows) {
-          if (warZone[i + whatCol][j + whatRow].getMine()) {
+          if (board[i + whatCol][j + whatRow].getMine()) {
             counter++;
           }
         }
@@ -86,8 +86,8 @@ public class Cell {
         for (int i = -1; i <= 1; i++) {
           for (int j = -1; j <= 1; j++) {
              if (i + whatCol > -1 && i + whatCol < cols && j + whatRow > -1 && j + whatRow < rows) {
-                if (warZone[whatCol + i][whatRow + j].getUncovered() == false) {
-                    warZone[whatCol + i][whatRow + j].setUncovered(true);
+                if (board[whatCol + i][whatRow + j].getUncovered() == false) {
+                    board[whatCol + i][whatRow + j].setUncovered(true);
                 }
         }
       }
